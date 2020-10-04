@@ -113,25 +113,79 @@
     /*-------LATEST-NEWS----------*/
     /*----------------------------*/
     
-    #latest-news {
+    .article-list {
         display: grid;
-        grid-template-rows: 6% repeat(8, 1fr);
+        grid-template-rows: 12% repeat(8, 1fr);
         grid-gap: 10px;
         padding-left: 20px;
     }
     
-    #latest-news>article {
-        display: grid;
-        grid-template-columns: 1fr 4fr;
+    .article-list>article {
+        display: flex;
     }
     
-    #latest-news>div {
+    .article-title {
         display: flex;
         align-items: center;
         margin-top: 30px;
         font-size: 20px;
     }
     
+    .img-sq {
+        height: 5rem;
+        width: 5rem;
+        margin-right: 15px;
+    }
+    
     .chevron-forward {
         color: red;
+    }
+    /*----------------------------*/
+    /*-----------FUNDING----------*/
+    /*----------------------------*/
+    
+    #funding-list {
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+        grid-gap: 10px;
+        padding-left: 20px;
+        margin: 25px 0;
+    }
+    
+    #funding-list>div>div>ul {
+        list-style: none;
+        line-height: 30px;
+        padding-top: 15px;
+    }
+    
+    .funding-container {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+    }
+    
+    .fund-img-container {
+        display: flex;
+    }
+    
+    .fund-img-container>div>img {
+        height: 4rem;
+    }
+    
+    .fund-img-cont-grid {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+    }
+    
+    .fund-img-container-grid {
+        display: grid;
+        grid-template-rows: repeat (2, 1fr);
+        width: 100%;
+    }
+    
+    .fund-title-container-1 {
+        background-color: red;
+    }
+    
+    .fund-title-container-2 {
+        background-color: rgb(255, 221, 221);
     }
