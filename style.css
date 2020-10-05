@@ -2,6 +2,7 @@
                                                                                                                             margin: 0;
                                                                                                                             padding: 0;
                                                                                                                             box-sizing: border-box;
+                                                                                                                            font-family: 'Heebo', sans-serif;
                                                                                                                         }
                                                                                                                         
                                                                                                                         ol,
@@ -11,6 +12,7 @@
                                                                                                                         }
                                                                                                                         
                                                                                                                         a {
+                                                                                                                            font-size: 26px;
                                                                                                                             text-decoration: none;
                                                                                                                             color: red;
                                                                                                                         }
@@ -18,10 +20,68 @@
                                                                                                                         /*------------NAV-------------*/
                                                                                                                         /*----------------------------*/
                                                                                                                         
-                                                                                                                        #navbar {}
+                                                                                                                        #top-nav {
+                                                                                                                            font-size: 15px;
+                                                                                                                        }
+                                                                                                                        
+                                                                                                                        #bottom-nav {
+                                                                                                                            font-family: 'Oswald', sans-serif;
+                                                                                                                            letter-spacing: 1px;
+                                                                                                                        }
+                                                                                                                        
+                                                                                                                        #statement-row {
+                                                                                                                            font-size: 13px;
+                                                                                                                        }
                                                                                                                         /*----------------------------*/
                                                                                                                         /*------------HEADER-----------*/
                                                                                                                         /*----------------------------*/
+                                                                                                                        
+                                                                                                                        .top-stories>article>div {
+                                                                                                                            font-family: 'Oswald', sans-serif;
+                                                                                                                        }
+                                                                                                                        
+                                                                                                                        .top-stories>article>h1 {
+                                                                                                                            font-size: 35px;
+                                                                                                                            font-weight: 900;
+                                                                                                                        }
+                                                                                                                        
+                                                                                                                        .top-stories>article>p {
+                                                                                                                            font-size: 14px;
+                                                                                                                            font-weight: 200;
+                                                                                                                        }
                                                                                                                         /*----------------------------*/
                                                                                                                         /*-------LATEST-NEWS----------*/
                                                                                                                         /*----------------------------*/
+                                                                                                                        
+                                                                                                                        .article-title>h1 {
+                                                                                                                            font-size: 26px;
+                                                                                                                        }
+                                                                                                                        
+                                                                                                                        article>div>h2 {
+                                                                                                                            font-size: 16px;
+                                                                                                                        }
+                                                                                                                        
+                                                                                                                        article>div>p {
+                                                                                                                            font-size: 13px;
+                                                                                                                            font-weight: 200;
+                                                                                                                            color: rgba(163, 159, 159, 0.904);
+                                                                                                                        }
+                                                                                                                        /*----------------------------*/
+                                                                                                                        /*-----------FUNDING----------*/
+                                                                                                                        /*----------------------------*/
+                                                                                                                        
+                                                                                                                        #funding-list>ul {
+                                                                                                                            font-size: 12px;
+                                                                                                                        }
+                                                                                                                        
+                                                                                                                        #funding-links>li>a {
+                                                                                                                            font-size: 17px;
+                                                                                                                            font-weight: 200;
+                                                                                                                        }
+                                                                                                                        
+                                                                                                                        @media only screen and (min-width: 786px) {
+                                                                                                                            #border-center {
+                                                                                                                                border-left: 1px solid red;
+                                                                                                                                border-right: 1px solid red;
+                                                                                                                            }
+                                                                                                                        }
