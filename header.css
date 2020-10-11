@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Heebo', sans-serif;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    font-size: 26px;
+    text-decoration: none;
+    color: red;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/*----------------------------*/
+
+
+/*------------HEADER-----------*/
+
+
+/*----------------------------*/
+
+.top-stories {
+    display: grid;
+    grid-template-areas: "hero side-top" "hero side-bot";
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 10px;
+    margin: 10px;
+}
+
+.top-stories>article {
+    color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    align-items: end;
+    padding: 15px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+#hero {
+    grid-area: hero;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 500px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.865)), url(images/Top-image-1.jpg);
+}
+
+@media (max-width: 786px) {
+    .top-stories {
+        grid-template-areas: "hero" "side-top" "side-bot";
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        margin-top: 0;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    #hero {
+        min-height: 0;
+    }
+}
+
+#side-top {
+    display: grid;
+    align-items: end;
+    line-height: 30px;
+    grid-area: side-top;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.865)), url(images/Top-image-2.png);
+}
+
+#side-bot {
+    display: grid;
+    align-items: end;
+    grid-area: side-bot;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.865)), url(images/Top-image-3.jpg);
+}
+
+#logo-2 {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 155px;
+}
+
+@media (max-width: 1024px) {
+    #logo-2 {
+        display: none;
+    }
+}
+
+.top-stories>article>div {
+    font-family: 'Oswald', sans-serif;
+}
+
+.top-stories>article>h1 {
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.top-stories>article>p {
+    font-size: 14px;
+    font-weight: 200;
+}

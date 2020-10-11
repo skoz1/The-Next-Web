@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Heebo', sans-serif;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    font-size: 26px;
+    text-decoration: none;
+    color: red;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/*----------------------------*/
+
+
+/*-------LATEST-NEWS----------*/
+
+
+/*----------------------------*/
+
+.article-list {
+    padding: 0 3%;
+}
+
+.article-title {
+    margin: 15px 0;
+}
+
+.article-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-gap: 20px;
+}
+
+.article-title>h1 {
+    font-size: 26px;
+}
+
+article>div>h2 {
+    font-size: 16px;
+}
+
+article>div>p {
+    font-size: 13px;
+    font-weight: 200;
+    color: rgba(163, 159, 159, 0.904);
+}

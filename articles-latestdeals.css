@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Heebo', sans-serif;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    font-size: 26px;
+    text-decoration: none;
+    color: red;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/*----------------------------*/
+
+
+/*----------ARTICLES----------*/
+
+
+/*----------------------------*/
+
+article>p {
+    font-size: 14px;
+    color: grey;
+}
+
+.article-list>ul {
+    list-style-type: square;
+    font-size: 14px;
+    color: red;
+}
+
+.article-list>ul>li {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.356);
+}
+
+.article-list>ul>li>p {
+    color: grey;
+}
+
+.article-backgr {
+    background-image: url(images/Media-image-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    background: linear-gradient( 10px 10px black);
+}
+
+
+/*----------------------------*/
+
+
+/*--------LATEST-DEALS--------*/
+
+
+/*----------------------------*/
+
+.slashed-price {
+    font-size: 12px;
+    text-decoration: line-through;
+    color: rgb(186, 186, 186);
+}
+
+#deals-sect>div>p {
+    color: red;
+}

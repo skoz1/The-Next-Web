@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Heebo', sans-serif;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    font-size: 26px;
+    text-decoration: none;
+    color: red;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/*----------------------------*/
+
+
+/*-----------FUNDING----------*/
+
+
+/*----------------------------*/
+
+#funding-list>ul {
+    font-size: 12px;
+}
+
+#funding-links>li>a {
+    font-size: 17px;
+    font-weight: 200;
+}
+
+@media only screen and (min-width: 786px) {
+    #border-center {
+        border-left: 1px solid red;
+        border-right: 1px solid red;
+    }
+}
+
+.fund-title-container-1>h2 {
+    font-size: 20px;
+}
+
+.fund-title-container-2 p:first-child {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 12px;
+}
+
+.fund-title-container-2 p:last-child {
+    font-family: 'Oswald', sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: grey;
+}
+
+.funding-bot-sect {
+    font-size: 14px;
+    color: rgb(66, 66, 66);
+}
