@@ -34,16 +34,34 @@ img {
     font-size: 12px;
 }
 
-#funding-links>li>a {
-    font-size: 17px;
-    font-weight: 200;
-}
-
-@media only screen and (min-width: 786px) {
+@media only screen and (min-width: 1024px) {
+    #funding-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin: 0 20px;
+    }
     #border-center {
         border-left: 1px solid red;
         border-right: 1px solid red;
     }
+    #funding-links {
+        display: flex;
+        padding-top: 20px;
+    }
+    #funding-links>li {
+        padding: 10px;
+    }
+}
+
+.wrapper {
+    grid-template-columns: repeat(auto-fill, minmax(270px, auto));
+    grid-gap: 20px;
+}
+
+#funding-links>li>a {
+    font-size: 17px;
+    font-weight: 200;
 }
 
 .fund-title-container-1>h2 {
