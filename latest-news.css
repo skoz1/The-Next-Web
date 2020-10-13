@@ -40,8 +40,21 @@ img {
 
 .article-group {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(270px, auto));
     grid-gap: 20px;
+}
+
+@media (max-width: 610px) {
+    .article-group {
+        grid-template-rows: 1fr;
+    }
+    .article-group>article {
+        display: flex;
+    }
+    .img-sq {
+        height: 60px;
+        padding-right: 10px;
+    }
 }
 
 .article-title>h1 {
