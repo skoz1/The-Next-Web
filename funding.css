@@ -54,10 +54,29 @@ img {
     }
 }
 
-.wrapper {
-    grid-template-columns: repeat(auto-fill, minmax(270px, auto));
+.funding-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, auto));
     grid-gap: 20px;
+    margin: 20px;
 }
+
+.funding-container {
+    width: 100%;
+}
+
+.img-container {
+    display: flex;
+    background: linear-gradient(to bottom, red 40%, #fad8d8 30%);
+    padding: 12px 10px;
+}
+
+.fund-img>img {
+    height: 60px;
+}
+
+
+/*STRUCTURE*/
 
 #funding-links>li>a {
     font-size: 17px;
