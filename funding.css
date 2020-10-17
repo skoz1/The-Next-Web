@@ -1,136 +1,144 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Heebo', sans-serif;
-}
-
-ol,
-ul,
-li {
-    list-style: none;
-}
-
-a {
-    font-size: 26px;
-    text-decoration: none;
-    color: red;
-}
-
-img {
-    max-width: 100%;
-}
-
-
-/*----------------------------*/
-
-
-/*-----------FUNDING----------*/
-
-
-/*----------------------------*/
-
-#funding-list>ul {
-    font-size: 12px;
-}
-
-.article-title {
-    margin: 0 30px;
-}
-
-@media only screen and (min-width: 1024px) {
-    #funding-title {
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
-        margin: 0 20px;
-    }
-    #border-center {
-        border-left: 1px solid red;
-        border-right: 1px solid red;
-    }
-    #funding-links {
-        display: flex;
-        padding-top: 20px;
-    }
-    #funding-links>li {
-        padding: 10px;
-    }
-}
-
-.fund-title-container-1 {
-    color: white;
-}
-
-.funding-wrapper {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(50px, auto));
-    grid-gap: 30px;
-    margin: 20px 50px;
-}
-
-.funding-container {
-    width: 100%;
-    background-color: rgb(253, 245, 245);
-}
-
-.img-container {
-    display: flex;
-    background: linear-gradient(to bottom, red 40%, #fad8d8 30%);
-    padding: 9px 0 0 10px;
-}
-
-.fund-img>img {
-    height: 60px;
-}
-
-.fund-title-container-1 {
-    padding: 3px 10px;
-}
-
-.fund-title-container-2 {
-    padding: 10px 10px 5px 10px;
-}
-
-.funding-bot-sect {
-    padding: 15px 15px;
-}
-
-.border-bot {
-    border-bottom: 1px solid #fad8d8;
-    line-height: 30px;
-}
-
-.border-bot>p>ion-icon {
-    font-size: 15px;
-}
-
-
-/*STRUCTURE*/
-
-#funding-links>li>a {
-    font-size: 17px;
-    font-weight: 200;
-}
-
-.fund-title-container-1>h2 {
-    font-size: 20px;
-}
-
-.fund-title-container-2 p:first-child {
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 12px;
-}
-
-.fund-title-container-2 p:last-child {
-    font-family: 'Oswald', sans-serif;
-    font-size: 13px;
-    letter-spacing: 1px;
-    color: grey;
-}
-
-.funding-bot-sect {
-    font-size: 14px;
-    color: rgb(66, 66, 66);
-}
+                * {
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                    font-family: 'Heebo', sans-serif;
+                }
+                
+                ol,
+                ul,
+                li {
+                    list-style: none;
+                }
+                
+                a {
+                    font-size: 26px;
+                    text-decoration: none;
+                    color: red;
+                }
+                
+                img {
+                    max-width: 100%;
+                }
+                /*----------------------------*/
+                /*-----------FUNDING----------*/
+                /*----------------------------*/
+                
+                #funding-list>ul {
+                    font-size: 12px;
+                }
+                
+                .article-title {
+                    margin: 0 30px;
+                }
+                
+                @media only screen and (min-width: 1024px) {
+                    #funding-title {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: baseline;
+                        margin: 0 20px;
+                    }
+                    #border-center {
+                        border-left: 1px solid red;
+                        border-right: 1px solid red;
+                    }
+                    #funding-links {
+                        display: flex;
+                        padding-top: 20px;
+                    }
+                    #funding-links>li {
+                        padding: 10px;
+                    }
+                }
+                
+                .fund-title-container-1 {
+                    color: white;
+                }
+                
+                .funding-wrapper {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(50px, auto));
+                    grid-gap: 30px;
+                    margin: 20px 50px;
+                }
+                
+                @media only screen and (max-width: 1024px) {
+                    .funding-container:last-of-type {
+                        display: none;
+                    }
+                    #funding-links {
+                        margin-left: 30px;
+                    }
+                }
+                
+                @media only screen and (max-width: 768px) {
+                    .funding-wrapper {
+                        grid-template-columns: none;
+                        grid-template-rows: 1fr;
+                    }
+                }
+                
+                .funding-container {
+                    width: 100%;
+                    background-color: rgb(253, 245, 245);
+                }
+                
+                .img-container {
+                    display: flex;
+                    background: linear-gradient(to bottom, red 40%, #fad8d8 30%);
+                    padding: 9px 0 0 10px;
+                }
+                
+                .fund-img>img {
+                    height: 60px;
+                }
+                
+                .fund-title-container-1 {
+                    padding: 3px 10px;
+                }
+                
+                .fund-title-container-2 {
+                    padding: 10px 10px 5px 10px;
+                }
+                
+                .funding-bot-sect {
+                    padding: 15px 15px;
+                }
+                
+                .border-bot {
+                    border-bottom: 1px solid #fad8d8;
+                    line-height: 30px;
+                }
+                
+                .border-bot>p>ion-icon {
+                    font-size: 15px;
+                }
+                /*STRUCTURE*/
+                
+                #funding-links>li>a {
+                    font-size: 17px;
+                    font-weight: 200;
+                }
+                
+                .fund-title-container-1>h2 {
+                    font-size: 20px;
+                }
+                
+                .fund-title-container-2 p:first-child {
+                    font-size: 18px;
+                    font-weight: 600;
+                    line-height: 12px;
+                }
+                
+                .fund-title-container-2 p:last-child {
+                    font-family: 'Oswald', sans-serif;
+                    font-size: 13px;
+                    letter-spacing: 1px;
+                    color: grey;
+                }
+                
+                .funding-bot-sect {
+                    font-size: 14px;
+                    color: rgb(66, 66, 66);
+                }
