@@ -30,6 +30,24 @@ img {
 
 /*----------------------------*/
 
+#article-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, auto));
+    grid-gap: 30px;
+    margin: 20px 50px;
+}
+
+@media only screen and (max-width: 800px) {
+    #article-wrapper {
+        display: grid;
+        grid-gap: 30px;
+        margin: 20px 50px;
+    }
+}
+
+
+/*STRUCTURE*/
+
 article>p {
     font-size: 14px;
     color: grey;
