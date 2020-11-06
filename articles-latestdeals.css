@@ -1,85 +1,96 @@
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: 'Heebo', sans-serif;
-    }
-    
-    ol,
-    ul,
-    li {
-        list-style: none;
-    }
-    
-    a {
-        font-size: 26px;
-        text-decoration: none;
-        color: red;
-    }
-    
-    img {
-        max-width: 100%;
-    }
-    /*----------------------------*/
-    /*----------ARTICLES----------*/
-    /*----------------------------*/
-    
-    #article-wrapper {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(270px, auto));
-        grid-gap: 20px;
-        margin: 20px 25px;
-    }
-    
-    @media only screen and (min-width: 900px) {
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Heebo', sans-serif;
+        }
+        
+        ol,
+        ul,
+        li {
+            list-style: none;
+        }
+        
+        a {
+            font-size: 26px;
+            text-decoration: none;
+            color: red;
+        }
+        
+        img {
+            max-width: 100%;
+        }
+        /*----------------------------*/
+        /*----------ARTICLES----------*/
+        /*----------------------------*/
+        
         #article-wrapper {
             display: grid;
-            grid-gap: 30px;
-            margin: 20px 50px;
+            grid-template-columns: repeat(auto-fill, minmax(270px, auto));
+            grid-gap: 20px;
+            margin: 20px 25px;
         }
+        
+        @media only screen and (min-width: 900px) {
+            #article-wrapper {
+                display: grid;
+                grid-gap: 30px;
+                margin: 20px 50px;
+            }
+            .article-backgr {
+                height: 100%;
+            }
+        }
+        /*STRUCTURE*/
+        
+        article>p {
+            font-size: 14px;
+            color: grey;
+        }
+        
+        .article-list>ul>li {
+            border-bottom: 1px solid rgba(128, 128, 128, 0.356);
+            list-style-type: square;
+            font-size: 14px;
+            color: red;
+        }
+        
+        .article-list>ul>li>p {
+            color: grey;
+        }
+        
         .article-backgr {
-            height: 100%;
+            background-image: url(images/Media-image-1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 50%;
+            background: linear-gradient( 10px 10px black);
         }
-    }
-    /*STRUCTURE*/
-    
-    article>p {
-        font-size: 14px;
-        color: grey;
-    }
-    
-    .article-list>ul>li {
-        border-bottom: 1px solid rgba(128, 128, 128, 0.356);
-        list-style-type: square;
-        font-size: 14px;
-        color: red;
-    }
-    
-    .article-list>ul>li>p {
-        color: grey;
-    }
-    
-    .article-backgr {
-        background-image: url(images/Media-image-1.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 50%;
-        background: linear-gradient( 10px 10px black);
-    }
-    
-    .latest-headline {
-        font-size: 20px;
-    }
-    /*----------------------------*/
-    /*--------LATEST-DEALS--------*/
-    /*----------------------------*/
-    
-    .slashed-price {
-        font-size: 12px;
-        text-decoration: line-through;
-        color: rgb(186, 186, 186);
-    }
-    
-    #deals-sect>div>p {
-        color: red;
-    }
+        
+        .latest-headline {
+            font-size: 15px;
+            color: red;
+        }
+        
+        .latest-sect {
+            display: flex;
+            background-color: rgba(255, 225, 225, 0.692);
+        }
+        
+        .latest-sect>img {
+            height: 90px;
+            width: 85px;
+        }
+        /*----------------------------*/
+        /*--------LATEST-DEALS--------*/
+        /*----------------------------*/
+        
+        .slashed-price {
+            font-size: 12px;
+            text-decoration: line-through;
+            color: rgb(186, 186, 186);
+        }
+        
+        #deals-sect>div>p {
+            color: red;
+        }
