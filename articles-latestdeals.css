@@ -1,137 +1,150 @@
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Heebo', sans-serif;
-        }
-        
-        ol,
-        ul,
-        li {
-            list-style: none;
-        }
-        
-        a {
-            font-size: 26px;
-            text-decoration: none;
-            color: red;
-        }
-        
-        img {
-            max-width: 100%;
-        }
-        /*----------------------------*/
-        /*----------ARTICLES----------*/
-        /*----------------------------*/
-        
-        #article-wrapper {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, auto));
-            margin: 20px 35px;
-            align-items: end;
-            grid-gap: 25px;
-        }
-        /*STRUCTURE*/
-        
-        article>p {
-            font-size: 14px;
-            color: white;
-        }
-        
-        .article-list>ul>li {
-            border-bottom: 1px solid rgba(128, 128, 128, 0.356);
-            list-style-type: square;
-            font-size: 14px;
-            color: red;
-            padding: 5px;
-        }
-        
-        .article-list>ul>li>p {
-            color: grey;
-        }
-        
-        .article-backgr {
-            background-image: url(images/Media-image-1.jpg);
-            background-repeat: no-repeat;
-            background-size: 100% 100%;
-            background: linear-gradient( 10px 10px black);
-            color: white;
-            padding: 200px 20px 30px 20px;
-        }
-        
-        .article-backgr>h1 {
-            font-size: 20px;
-        }
-        
-        .article-backgr>p {
-            color: white;
-        }
-        
-        .latest-headline {
-            font-size: 15px;
-            color: red;
-        }
-        
-        .latest-sect {
-            display: grid;
-            grid-template-columns: 3fr 1fr;
-        }
-        
-        .latest-sect>div:first-child {
-            background-color: rgba(255, 225, 225, 0.692);
-            padding: 15px;
-            height: 100px;
-        }
-        
-        .latest-sect>div>img {
-            height: 100px;
-            width: 100%;
-        }
-        /*----------------------------*/
-        /*--------LATEST-DEALS--------*/
-        /*----------------------------*/
-        
-        #deals {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-end;
-            margin: 20px;
-        }
-        
-        #deals-sect {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, auto));
-            margin: 20px;
-            grid-gap: 20px;
-        }
-        
-        #deals-sect>article>h1 {
-            font-size: 15px;
-        }
-        
-        @media (max-width: 610px) {
-            #deals-sect {
-                grid-template-rows: 1fr;
-            }
-            #deals-sect>article {
-                display: flex;
-            }
-            #deals-sect>article>div {
-                display: flex;
-            }
-            #deals-sect>article>div>img {
-                height: 60px;
-                padding-right: 10px;
-            }
-        }
-        /*STRUCTURE*/
-        
-        .slashed-price {
-            font-size: 12px;
-            text-decoration: line-through;
-            color: rgb(186, 186, 186);
-        }
-        
-        #deals-sect>div>p {
-            color: red;
-        }
+                * {
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                    font-family: 'Heebo', sans-serif;
+                }
+                
+                ol,
+                ul,
+                li {
+                    list-style: none;
+                }
+                
+                a {
+                    font-size: 26px;
+                    text-decoration: none;
+                    color: red;
+                }
+                
+                img {
+                    max-width: 100%;
+                }
+                /*----------------------------*/
+                /*----------ARTICLES----------*/
+                /*----------------------------*/
+                
+                #article-wrapper {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+                    margin: 20px 35px;
+                    align-items: end;
+                    grid-gap: 25px;
+                }
+                /*STRUCTURE*/
+                
+                article>p {
+                    font-size: 14px;
+                    color: white;
+                }
+                
+                .article-list>ul>li {
+                    border-bottom: 1px solid rgba(128, 128, 128, 0.356);
+                    list-style-type: square;
+                    font-size: 14px;
+                    color: red;
+                    padding: 5px;
+                }
+                
+                .article-list>ul>li>p {
+                    color: grey;
+                }
+                
+                .article-backgr {
+                    background-image: url(images/Media-image-1.jpg);
+                    background-repeat: no-repeat;
+                    background-size: 100% 100%;
+                    background: linear-gradient( 10px 10px black);
+                    color: white;
+                    padding: 200px 20px 30px 20px;
+                }
+                
+                .article-backgr>h1 {
+                    font-size: 20px;
+                }
+                
+                .article-backgr>p {
+                    color: white;
+                }
+                
+                .latest-headline {
+                    font-size: 15px;
+                    color: red;
+                }
+                
+                .latest-sect {
+                    display: grid;
+                    grid-template-columns: 3fr 1fr;
+                }
+                
+                .latest-sect>div:first-child {
+                    background-color: rgba(255, 225, 225, 0.692);
+                    padding: 15px;
+                    height: 100px;
+                }
+                
+                .latest-sect>div>img {
+                    height: 100px;
+                    width: 100%;
+                }
+                /*----------------------------*/
+                /*--------LATEST-DEALS--------*/
+                /*----------------------------*/
+                
+                #deals {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-end;
+                    margin: 20px;
+                }
+                
+                #deals-sect {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+                    margin: 20px;
+                    grid-gap: 20px;
+                }
+                
+                .slashed-price-sect>h1 {
+                    font-size: 15px;
+                }
+                
+                .slashed-price-sect {
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+                
+                .prices {
+                    display: flex;
+                }
+                
+                @media (max-width: 610px) {
+                    #deals-sect {
+                        grid-template-rows: 1fr;
+                    }
+                    #deals-sect>article {
+                        display: flex;
+                    }
+                    .slashed-price-sect {
+                        flex-wrap: wrap;
+                    }
+                    #deals-sect>article>div>img {
+                        height: 60px;
+                        padding-right: 10px;
+                    }
+                    .prices {
+                        display: flex;
+                        flex-wrap: nowrap;
+                    }
+                }
+                /*STRUCTURE*/
+                
+                .slashed-price {
+                    font-size: 12px;
+                    text-decoration: line-through;
+                    color: rgb(186, 186, 186);
+                }
+                
+                #deals-sect>div>p {
+                    color: red;
+                }
